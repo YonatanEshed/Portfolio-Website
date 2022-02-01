@@ -106,3 +106,10 @@ html{
     text-shadow: 0 0 30px var(--purple-half-color),
                  0 0 10px var(--purple-half-color);
 }
+
+
+@media only screen and (max-width: 900px){
+    .cursor{
+        display: none;
+    }
+}
