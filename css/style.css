@@ -111,7 +111,7 @@ html{
 @media only screen and (max-width: 900px){
 
     *{
-        cursor: default;
+        cursor: auto;
     }
 
     .cursor{
