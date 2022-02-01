@@ -37,7 +37,8 @@
     width: 34%;
     
     background: var(--black-half-op);
-    transition:var(--transition);
+    transition: var(--transition);
+    transition-property: box-shadow;
 }
 
 .content:hover{
