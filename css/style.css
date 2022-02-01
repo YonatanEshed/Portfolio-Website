@@ -110,6 +110,6 @@ html{
 
 @media only screen and (max-width: 900px){
     .cursor{
-        display: none;
+        display: auto;
     }
 }
