@@ -125,15 +125,33 @@
     }
 
     .content .text{
-        font-size: 16px;
+        font-size: 17px;
         padding: 5px 20px;
     }
 }
 
 @media only screen and (max-height: 860px) and (max-width:950px) {
+
+    .title{
+        line-height: 0;
+    }
+
+    .title .first-word{
+        font-size: 65px;
+    }
+
+    .title .second-word{
+        font-size: 140px;
+    }
+
     .content{
-        top: 360px;
+        top: 275px;
         width: 94%;
         left: 3vw;
+    }
+
+    .content .text{
+        font-size: 16px;
+        padding: 5px 20px;
     }
 }
