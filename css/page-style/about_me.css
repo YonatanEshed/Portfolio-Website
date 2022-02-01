@@ -38,7 +38,7 @@
     
     background: var(--black-half-op);
     transition: var(--transition);
-    transition-property: box-shadow;
+    transition-property: box-shadow, transform;
 }
 
 .content:hover{
