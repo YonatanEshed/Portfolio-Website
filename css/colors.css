@@ -1,0 +1,26 @@
+:root{
+    /*--colors--*/
+    --black-color:#0a0a0a;
+    --black-half-op:#00000033;
+    --white-color:#ffffff;
+    --white-half-op:#ffffff5c;
+    --dark-color:#131516;
+    --yellow-color:#f0cc19;
+    --yellow-half-color:#f0cc1980;
+    --green-color:#1AF056;
+    --green-half-color:#1AF05680;
+    --blue-color:#1A89F0;
+    --blue-half-color:#1A89F080;
+    --purple-color:#9a2cee;
+    --purple-half-color:#9a2cee80;
+    --cursor-color: var(--white-color);
+    --site-gradiant: linear-gradient(83.39deg, #f0cc1a -16.34%, #19f056 33.39%, #1988f0 74.72%, #9120EA 118.15%);
+
+    /*--images--*/
+    --BG-image-home: url("../images/BG-home.png");
+    --BG-image: url("../images/BG-image.png");
+    --logo-image: url("../images/logo.svg");
+
+    /*--fonts--*/
+    --site-font: 'Poppins', sans-serif;
+}
