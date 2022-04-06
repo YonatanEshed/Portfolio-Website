@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --light-color: #B2B1B9;
+    --dark-color: #595260;
+    --primary-color: #FFD523;
+    --background-color: #2C2E43;
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 3.4rem;
+    --gap: 2rem;
+    --border-radius: .5rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+
+/* Base styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+    color: var(--light-color);
+    background-color: var(--background-color);
+    letter-spacing: 1px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color .25s ease-in-out, background-color .3s ease-in-out;
+}
+
+h2 span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+a:hover,
+a:focus{
+    color: var(--primary-color);
+}
+
+
+input,
+textarea,
+button{
+    font: inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+i{
+    font-size: var(--font-size-md);
+}
+
+::selection{
+    color: var(--dark-color);
+}
+
+/* Reusable classes */
+
+.container{
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.place-items-center{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.section{
+    position: relative;
+    padding: 5rem;
+    width: 100%;
+}
+
+.btn{
+    padding: 1rem 4rem;
+    color: var(--background-color);
+    background: var(--primary-color);
+    border-radius: 3rem;
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    transition: color .3s, background-color .3s, border .3s;
+}
+
+.btn:hover{
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+}
+
+.ghost-btn{
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    border: 2px solid var(--primary-color);
+    background: var(--background-color);
+    color: var(--primary-color);
+    transition: color .3s, border .3s;
+}
+
+.ghost-btn:hover{
+    color: var(--light-color);
+    border-color: var(--light-color);
+}
+
+/* Header */
+
+.header{
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 70px;
+    height: 70px;
+}
+
+.left-menu > .list{
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+
+/* Home section */
+
+.home-section{
+    height: 100vh;
+}
+
+.home-section .title-container{
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+}
+
+.home-section .title-container h1{
+    font-size: 17.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.home-section .title-container h3{
+    font-weight: 500;
+    font-size: 10rem;
+    position: relative;
+    top: 10rem;
+    right: .5rem;
+
+}
+
+.home-section .title-container h2{
+    width: 30rem;
+    font-weight: 500;
+    font-size: 12.5rem;
+    position: relative;
+    bottom: 10rem;
+    left: 36rem;
+}
+
+.home-section .buttons-container{
+    width: 50rem;
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    bottom: 10rem;
+    left: 36rem;
+}
+
+.home-section .image-container{
+    position: absolute;
+    bottom: -2rem;
+    left: 80rem;
+    z-index: -1;
+}
+
+.home-section .image-container img{
+    width: 120rem;
+    opacity: 1;
+}
+
+/* About me section */
+
+.about-me-section{
+    height: max(50vw, 65rem);
+}
+
+.about-me-container-wrapper{
+    position: relative;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about-me-container{
+    width: 60rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.about-me-container .title-container h2,
+.portfolio-section .title-container h2,
+.contact-section .title-container h2{
+    font-size: 10rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-me-container p{
+    text-align: justify;
+}
+
+.about-me-section .image-container{
+    position: absolute;
+    top: 7.5rem;
+    z-index: -1;
+}
+
+.about-me-section .image-container img{
+    opacity: 1;
+    width: max(40rem, 70vw - 35rem);
+}
+
+/* Portfolio section */
+
+.portfolio-section .title-container,
+.contact-section .title-container{
+    margin-bottom: 10rem;
+}
+
+
+.portfolio-section .proj-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.portfolio-section .proj-container .proj{
+    background-image: url('assets/blank-color.png');
+    background-position: center;
+    background-size: 40rem 25rem;
+    background-position: center;
+    
+    height: 25rem;
+    width: 40rem;
+    display: grid;
+    place-content: center;
+    color: var(--dark-color);
+    
+    transition: background-size .3s ease-out, background-image .5s;
+}
+
+.portfolio-section .proj-container .proj:hover{
+    background-size: 45rem 30rem;
+}
+
+.portfolio-section .proj-container .proj-1:hover{
+    background-image: url('assets/projects-images/1.jpg');
+}
+
+.portfolio-section .proj-container .proj-2:hover{
+    background-image: url('assets/projects-images/1.jpg');
+}
+
+.portfolio-section .proj-container .proj-3:hover{
+    background-image: url('assets/projects-images/1.jpg');
+}
+
+.portfolio-section .proj-container .proj p{
+    font-size: var(--font-size-md);
+    font-weight: 500;
+}
+
+.portfolio-section .proj-container .proj p span{
+    font-weight: 700;
+} 
+
+/* Contact section */
+
+.contact-section .buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    position: relative;
+    justify-content: center;
+}
+
+.link-btn{
+    padding: 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 50%;
+}
+
+.link-btn:hover{
+    background-color: var(--light-color);
+    color: var(--background-color);
+}
+
+.link-btn i{
+    font-size: 4rem;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--dark-color);
+    padding: 1rem var(--gap);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a:hover,
+.footer a:focus{
+    color: var(--light-color);
+}
+
+.footer *::selection{
+    background-color: var(--background-color);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1050px) {
+    .bg-image{
+        display: none;
+    }
+
+    .title-container-wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    .about-me-container-wrapper{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .home-section .title-container{
+        position: relative;
+        left: 0;
+    }
+
+    .home-section .title-container h1{
+        font-size: 12.5rem;
+        font-weight: 500;
+    }
+
+    .home-section .title-container h2{
+        font-size: 9rem;
+        bottom: 7.5rem;
+        left: 26.25rem;
+    }
+
+    .home-section .title-container h3{
+        font-size: 8rem;
+        position: relative;
+        top: 7.5rem;
+        right: .5rem;
+    }
+
+    
+    .about-me-container .title-container h2,
+    .portfolio-section .title-container h2,
+    .contact-section .title-container h2{
+        font-size: max(4rem, 11vw);
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    
+}
+
+@media only screen and (max-width: 690px) {
+    .left-menu{
+        display: none;
+    }
+
+    .home-section{
+        height: 60vh;
+    }
+
+    .home-section .title-container{
+        position: relative;
+        top: 7.5rem;
+    }
+
+    .home-section .title-container h1{
+        font-size: 8.5rem;
+        font-weight: 500;
+    }
+
+    .home-section .title-container h2{
+        font-size: 6rem;
+        bottom: 5.25rem;
+        left: 18.25rem;
+    }
+
+    .home-section .title-container h3{
+        font-size: 5.5rem;
+        position: relative;
+        top: 5rem;
+        right: .25rem;
+    }
+
+    .about-me-section{
+        height: 50vh;
+    }
+
+    .about-me-container p{
+        font-size: 1.4rem;
+    }
+
+    .portfolio-section .title-container,
+    .contact-section .title-container{
+        margin-bottom: 5rem;
+    }
+}
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--background-color);
+    border-radius: .1em;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}

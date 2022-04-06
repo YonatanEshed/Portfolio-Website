@@ -4,59 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page-style/home.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Yonatan Eshed</title>
 </head>
-<body class="no-scroll">
-    <div class="BG-image-home"></div>
-    <div class="nav-bg"></div>
-    <nav>
-        <div class="pc-nav">
-            <ul class="pc-nav-list">
-                <li><a href="index.html" class="nav-link nav-home-btn">Home</a></li>
-                <li><a href="pages/about_me.html" class="nav-link nav-about-btn">About Me</a></li>
-                <!--<li><a href="#" class="nav-link nav-portfolio-btn">Portfolio</a></li>
-                <li><a href="#" class="nav-link nav-contact-btn">Contact</a></li>-->
-            </ul>
-        </div>
-        <a href="#"><div class="nav-logo"></div></a>
-        <div class="phone-nav">
-            <button id="phone-open-nav-btn"><i class="fas fa-bars"></i></button>
-        </div>
-    </nav>
-    <main class="home">
-        <div class="tilte-container">
-            <div class="title glow">
-                <h1 class="first-word"><span class="purple">Y</span>onata<span class="green">n</span></h1>
-                <h1 class="second-word"><span class="yellow">E</span>she<span class="blue">d</span></h1>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <svg
+                width="70px" height="70px" viewBox="0 0 2000.000000 2000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,2000.000000) scale(0.100000,-0.100000)"
+                fill="#FFD523" stroke="none">
+                <path d="M5225 14855 c-31 -11 -505 -480 -2408 -2382 -1403 -1403 -2375 -2381
+                -2383 -2400 -18 -41 -18 -105 0 -146 8 -19 980 -997 2388 -2404 2086 -2085
+                2378 -2373 2413 -2382 41 -10 93 -4 130 17 11 6 171 163 357 349 282 284 338
+                344 347 378 13 49 13 51 0 100 -9 35 -260 289 -1949 1980 -1108 1108 -1944
+                1952 -1950 1968 -13 36 -13 98 0 134 6 16 842 860 1950 1968 1689 1691 1940
+                1945 1949 1980 13 49 13 51 0 100 -9 34 -65 94 -347 378 -186 186 -348 344
+                -362 351 -42 22 -92 26 -135 11z"/>
+                <path d="M14705 14865 c-5 -2 -23 -6 -40 -10 -22 -5 -120 -96 -368 -343 -186
+                -185 -344 -348 -352 -362 -22 -42 -27 -86 -15 -132 10 -39 185 -217 1950
+                -1983 1108 -1108 1944 -1952 1950 -1968 5 -16 10 -46 10 -67 0 -21 -5 -51 -10
+                -67 -6 -16 -842 -860 -1950 -1968 -1689 -1691 -1940 -1945 -1949 -1980 -13
+                -49 -13 -51 0 -100 9 -34 65 -94 347 -378 186 -186 346 -343 357 -349 37 -21
+                89 -27 130 -17 35 9 327 297 2413 2382 1408 1407 2380 2385 2388 2404 18 41
+                18 105 0 146 -8 19 -980 997 -2388 2404 -2071 2070 -2378 2373 -2413 2382 -42
+                11 -44 12 -60 6z"/>
+                <path d="M5846 12990 c-14 -18 -26 -38 -26 -45 0 -8 23 -44 52 -82 29 -37 591
+                -771 1250 -1631 659 -860 1199 -1566 1201 -1571 1 -4 -438 -582 -977 -1285
+                -690 -901 -978 -1285 -978 -1302 0 -14 10 -36 23 -50 l23 -24 3593 2 3594 3
+                39 41 c51 55 52 68 48 524 -3 356 -4 377 -23 410 -12 19 -36 43 -55 55 -35 20
+                -43 20 -2554 25 l-2519 5 545 710 545 710 2854 5 c2848 5 2854 5 2889 25 19
+                12 43 36 55 55 19 34 20 51 20 455 0 383 -2 423 -18 452 -9 18 -29 41 -44 50
+                -26 17 -161 18 -2481 23 l-2454 5 538 702 539 703 1015 0 1016 0 44 23 c85 43
+                85 39 88 467 4 456 3 469 -48 524 l-39 41 -1308 0 -1308 0 -54 -29 c-30 -15
+                -74 -49 -98 -75 -24 -25 -435 -557 -914 -1181 -479 -624 -872 -1135 -874
+                -1135 -2 0 -395 511 -874 1135 -479 624 -890 1156 -914 1181 -24 26 -68 60
+                -98 75 l-54 29 -616 3 -617 3 -26 -31z"/>
+                </g>
+                </svg>
+            </a>
+            <div class="left-menu">
+                <ul class="list">
+                    <li class="list-link"><a href="#home" id="link-home">Home</a></li>
+                    <li class="list-link"><a href="#about" id="link-about">About me</a></li>
+                    <li class="list-link"><a href="#portfolio" id="link-portfolio">Portfolio</a></li>
+                    <li class="list-link"><a href="#contact" id="link-contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="title">
-                <h1 class="first-word"><span class="purple">Y</span>onata<span class="green">n</span></h1>
-                <h1 class="second-word"><span class="yellow">E</span>she<span class="blue">d</span></h1>
-            <div class="btn-container">
-                <a href="pages/about_me.html" class="title-btn"> About Me</a>
+        </nav>
+    </header>
+    <main>
+        <!-- home section -->
+        <section class="home-section section" id="home">
+            <div class="title-container-wrapper">
+                <div class="title-container container">
+                    <h3>Hello I'm</h3>
+                    <h1>Yonatan</h1>
+                    <h2>Eshed</h2>
+                    <!-- <div class="buttons-container">
+                        <a href="#" class="ghost-btn">My works</a>
+                        <a href="#" class="btn">About me</a>
+                    </div> -->
+    
+                </div>
             </div>
-        </div>
-            
-        </div>
-        <div id="phone-nav" class="phone-nav-frame">
-            <ul class="phone-nav-list">
-                <li><a href="index.html" class="nav-link nav-home-btn">Home</a></li>
-                <li><a href="pages/about_me.html" class="nav-link nav-about-btn">About Me</a></li>
-                <!--<li><a href="#" class="nav-link nav-portfolio-btn">Portfolio</a></li>
-                <li><a href="#" class="nav-link nav-contact-btn">Contact</a></li>-->
-            </ul>
-            <div class="close-btn-container">
-                <button id="close-btn"><i class="fas fa-times"></i></button>
+            <div class="image-container bg-image">
+                <img src="assets/background-images/earth-ill.png" alt="earth illustration">
             </div>
-        </div>
-        <div class="cursor"></div>
+        </section>
+        <!-- about me section -->
+        <section class="about-me-section section" id="about">
+            <div class="about-me-container-wrapper">
+                <div class="about-me-container container">
+                    <div class="title-container">
+                        <h2>About <span>Me</span></h2>
+                    </div>
+
+                    <p class="about-me-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Dictum non consectetur a erat nam at lectus. Faucibus pulvinar elementum integer enim neque volutpat ac. Nunc sed velit dignissim sodales ut eu sem integer vitae. Ut lectus arcu bibendum at varius vel. Varius duis at consectetur lorem donec. Imperdiet dui accumsan sit amet nulla facilisi morbi. Egestas purus viverra accumsan in. Phasellus faucibus scelerisque eleifend donec. Quisque sagittis purus sit amet. Odio euismod lacinia at quis risus. Duis ultricies lacus sed turpis tincidunt id aliquet.
+                    </p>
+                </div>
+            </div>
+            <div class="image-container bg-image">
+                <img src="assets/background-images/about-me-ill.png" alt="space illustration">
+            </div>
+        </section>
+        <!-- portfolio section -->
+        <section class="portfolio-section section" id="portfolio">
+            <div class="title-container container">
+                <h2><span>My</span> Works</h2>
+            </div>
+            <div class="proj-container container">
+                <a href="">
+                    <div class="proj proj-1">
+                        <p><span>Post</span>app</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="proj proj-2">
+                        <p><span>Post</span>app</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="proj proj-3">
+                        <p><span>Post</span>app</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact-section section" id="contact">
+            <div class="title-container">
+                <h2>Contact <span>Me</span></h2>
+            </div>
+            <div class="buttons-container">
+                <a href="https://github.com/YonatanEshed" class="link-btn">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yonatan-eshed-16657b236/" class="link-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/yonataneshed/" class="link-btn">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="mailto: yonatan.eshed@gmail.com" class="link-btn">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer section">
+            <p>yonatan eshed ©</p>
+            <p><a href="mailto: yonatan.eshed@gmail.com">yonatan.eshed@gmail.com</a></p>
+        </footer>
     </main>
-    <script src="js/cursor.js"></script>
-    <script src="js/phone-nav.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
