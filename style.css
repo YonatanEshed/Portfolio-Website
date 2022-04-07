@@ -146,7 +146,7 @@ i{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 999;
 }
 
@@ -196,7 +196,7 @@ i{
 }
 
 .home-section .title-container h2{
-    width: 30rem;
+    width: 0;
     font-weight: 500;
     font-size: 12.5rem;
     position: relative;
@@ -286,7 +286,7 @@ i{
 .portfolio-section .proj-container .proj{
     background-image: url('assets/blank-color.png');
     background-position: center;
-    background-size: 40rem 25rem;
+    background-size: 100% 100%;
     background-position: center;
     
     height: 25rem;
@@ -299,7 +299,7 @@ i{
 }
 
 .portfolio-section .proj-container .proj:hover{
-    background-size: 45rem 30rem;
+    background-size: 115% 115%;
 }
 
 .portfolio-section .proj-container .proj-1:hover{
@@ -324,6 +324,12 @@ i{
 } 
 
 /* Contact section */
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .contact-section .buttons-container{
     display: flex;
@@ -420,16 +426,13 @@ i{
 }
 
 @media only screen and (max-width: 690px) {
-    
-}
 
-@media only screen and (max-width: 690px) {
     .left-menu{
         display: none;
     }
 
     .home-section{
-        height: 60vh;
+        height: 60rem;
     }
 
     .home-section .title-container{
@@ -456,7 +459,7 @@ i{
     }
 
     .about-me-section{
-        height: 50vh;
+        height: 80rem;
     }
 
     .about-me-container p{
@@ -466,6 +469,39 @@ i{
     .portfolio-section .title-container,
     .contact-section .title-container{
         margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .home-section .title-container h1{
+        font-size: 6rem;
+        font-weight: 500;
+    }
+
+    .home-section .title-container h2{
+        font-size: 4.5rem;
+        bottom: 3.75rem;
+        left: 12.225rem;
+    }
+
+    .home-section .title-container h3{
+        font-size: 4.25rem;
+        position: relative;
+        top: 3.75rem;
+        right: .25rem;
+    }
+
+    .portfolio-section .proj-container .proj{ 
+        height: 17.5rem;
+        width: 28rem;
+    }
+
+    .portfolio-section .proj-container .proj p{
+        font-size: 2rem;
+    }
+
+    .contact-section .buttons-container{
+        width: 20rem;
     }
 }
 
